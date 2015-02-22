@@ -140,7 +140,7 @@ round(classeTab/length(training$classe),2)
 ##    A    B    C    D    E 
 ## 0.28 0.19 0.17 0.16 0.18
 ```
-From the confusion matrix, the error rates appeared to be less than 5% as accuracy rates correspond to the proportions in the contingency table. In order to assess out-of-sample error rate, individual cross-validation accuracy was reviewed.
+From the confusion matrix, the error rates appeared to be less than 2% as accuracy rates, more or less, correspond to the proportions in the contingency table. In order to assess out-of-sample error rate, individual cross-validation accuracy was reviewed.
 
 ```r
 modFit10$resample
