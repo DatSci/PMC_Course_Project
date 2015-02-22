@@ -92,7 +92,7 @@ modFit10 <- train(training$classe ~ ., method="rf", data=trainPC,
 confusionMatrix(modFit10)
 round(classeTab/length(training$classe),2)
 ```
-From the confusion matrix, the error rates appeared to be less than 5% as accuracy rates correspond to the contingency table. In order to assess out-of-sample error rate, individual cross-validation accuracy was reviewed.
+From the confusion matrix, the error rates appeared to be less than 5% as accuracy rates correspond to the proportions in the contingency table. In order to assess out-of-sample error rate, individual cross-validation accuracy was reviewed.
 ```{r}
 modFit10$resample
 ```
